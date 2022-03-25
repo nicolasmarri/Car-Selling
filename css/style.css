@@ -90,6 +90,15 @@ header{
     display: none;
 }
 
+body{
+    height: 300rem;
+}
+
+.header.active{
+    box-shadow: var(--box-shadow);
+    padding: 2rem 9%;
+}
+
 
 
 
@@ -120,6 +129,10 @@ header{
     }
 
     .header{
+        padding: 2rem;
+    }
+
+    .header.active{
         padding: 2rem;
     }
 
