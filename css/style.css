@@ -40,11 +40,11 @@ html{
 }
 
 header{
-    /* position: fixed;
+    position: fixed;
     top:0;
     left: 0;
     right: 0;
-    z-index: 999; */
+    z-index: 999;
     background: #fff;
     display: flex;
     align-items: center;
@@ -81,4 +81,83 @@ header{
     color:var(--light-color);
     cursor: pointer;
     display: none;
+}
+
+#menu-btn{
+    font-size: 2rem;
+    color:var(--light-color);
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media(max-width:991px){
+    
+    html{
+        font-size: 55%
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+}
+
+@media(max-width:768px){
+    #menu-btn{
+        display: block;
+    }
+
+    .header #login-btn i{
+        display: block;
+    }
+
+    .header #login-btn .btn{
+        display: none;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%;
+        left:0;
+        right: 0;
+        background: #fff;
+        border-top: var(--border);
+        clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size: 50%
+    }  
 }
