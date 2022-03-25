@@ -130,6 +130,10 @@ header{
         display: block;
     }
 
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
     .header #login-btn i{
         display: block;
     }
